@@ -11,7 +11,7 @@
     "url": "git+https://github.com/RKeru/planet-exploration.git"
   },
   "author": "RKeru",
-  "license": "ISC",
+  "license": "GNU GPL V3",
   "bugs": {
     "url": "https://github.com/RKeru/planet-exploration/issues"
   },
