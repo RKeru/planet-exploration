@@ -1,0 +1,17 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "PlanetExploration",
+	"dockerFile": "Dockerfile",
+	"runArgs": [  // Add Docker CLI Command
+		// For Debug
+		"--cap-add=SYS_PTRACE", //Add Linux Capabilities
+		"--security-opt",  // Security options
+		"seccomp=unconfined",
+		"-v",
+    	"${env:HOME}${env:USERPROFILE}/.ssh:/tmp/.ssh"  // Environment PATH
+	],
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"postCreateCommand": "bash /workspaces/planet-exploration/.devcontainer/docker-setup.sh"
+}
