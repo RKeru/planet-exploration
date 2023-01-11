@@ -7,8 +7,8 @@
 		"--cap-add=SYS_PTRACE", //Add Linux Capabilities
 		"--security-opt",  // Security options
 		"seccomp=unconfined",
-		"-v",
-    	"${env:HOME}${env:USERPROFILE}/.ssh:/tmp/.ssh"  // Environment PATH
+		"-v",  // make volume
+    	"${env:HOME}${env:USERPROFILE}/.ssh:/tmp/.ssh"  // Copy volume for ssh key
 	],
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash"
