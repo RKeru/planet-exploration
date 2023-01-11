@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RKeru/planet-exploration/issues"
   },
-  "homepage": "https://github.com/RKeru/planet-exploration#readme"
+  "homepage": "https://github.com/RKeru/planet-exploration#readme",
+  "dependencies": {
+    "csv-parse": "^5.3.3"
+  }
 }
